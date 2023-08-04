@@ -8,6 +8,10 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - 'LICENSE'
 jobs:
   createTagAndRelease:
     permissions: write-all
